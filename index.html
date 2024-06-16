@@ -1,0 +1,80 @@
+<html><meta charset='UTF-8'/><meta content='width=device-width, initial-scale=1, user-scalable=1, minimum-scale=1, maximum-scale=5' name='viewport'/><meta content='IE=edge' http-equiv='X-UA-Compatible'/><script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.19/dist/sweetalert2.all.min.js"></script><script src="https://kit.fontawesome.com/4f3ce16e3e.js" crossorigin="anonymous"></script><link href="https://feeldreams.github.io/akuterlalu/style.css" rel="stylesheet" type="text/css" />
+<head>
+<title>Tuk seseorang</title>
+<link rel="icon" type="image/x-icon" href="logo-removebg-preview.png">
+</head>
+<body>
+   
+   <audio src="https://htmlku.com/geser/angelbaby2.mp3" id="linkmp3" class="sembunyi"></audio>
+
+   <div id="bgbelakang">
+     <!-- Wallpaper --><img src="https://feeldreams.github.io/jikananti/6.jpg" id="wallpaper"/>
+   </div>
+
+   <div class="overlay">
+     <div class="loading-message">Harap tunggu...</div>
+   </div>
+
+   <div id='Content'>
+
+     <div id="loveIn">
+       <!-- Tombol LOVE -->
+       <label class='lovein'><svg class='line' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><g transform='translate(2.550170, 3.550158)'><path d='M0.371729633,8.89614246 C-0.701270367,5.54614246 0.553729633,1.38114246 4.07072963,0.249142462 C5.92072963,-0.347857538 8.20372963,0.150142462 9.50072963,1.93914246 C10.7237296,0.0841424625 13.0727296,-0.343857538 14.9207296,0.249142462 C18.4367296,1.38114246 19.6987296,5.54614246 18.6267296,8.89614246 C16.9567296,14.2061425 11.1297296,16.9721425 9.50072963,16.9721425 C7.87272963,16.9721425 2.09772963,14.2681425 0.371729633,8.89614246 Z'></path><path d='M13.23843,4.013842 C14.44543,4.137842 15.20043,5.094842 15.15543,6.435842'></path></g></svg></label>
+     </div>
+     
+     <p id="ket">Sentuh LOVEnya!</p>
+     <p id="kot"><a href="" target="_blank">Tekan ja gambarnya</a></p>
+
+   <!-- Foto Atas --><div><img id="fotosatu" src=""/><img id="fotodua" src=""/><img id="fototiga" src=""/><img id="fotoempat" src=""/><img id="fotolima" src=""/></div>
+
+   <div><blockquote id='bq'>
+     <p id="kalimat">...</p>
+     <p id="kalimatc"></p>
+   </blockquote></div>
+
+   </div>
+
+<!-- Jangan Edit Bagian Ini --><script>
+  const swals = Swal.mixin({allowOutsideClick: false, cancelButtonColor: '#FF0040',}); const swalsy = Swal.mixin({confirmButtonText: 'Iya', allowOutsideClick: false,}); const swalst = Swal.mixin({allowOutsideClick: false, showConfirmButton: false, timer: 1200, timerProgressBar: true, didOpen: () => {Swal.showLoading();const b = Swal.getHtmlContainer().querySelector('b');timerInterval = setInterval(() => {Swal.getTimerLeft()}, 100)},willClose: () => {clearInterval(timerInterval)}}); const style = document.createElement('style'); var today = new Date();var dd = String(today.getDate()).padStart(2, '0');var mm = String(today.getMonth() + 1).padStart(2, '0');var yyyy = today.getFullYear();const monthNames = ["Januari", "Februari", "Maret", "April", "Mei", "Juni", "Juli", "Agustus", "September", "Oktober", "November", "Desember"];today = dd + ' ' + monthNames[today.getMonth()] + ' ' + yyyy;const body = document.querySelector("body"); audio = new Audio('' + linkmp3.src); function berjatuhan() {const heart = document.createElement("div"); heart.className = "fas fa-heart-broken"; heart.style.left = (Math.random() * 90)+"vw"; heart.style.animationDuration = (Math.random()*3)+2+"s"; body.appendChild(heart);} setInterval(function name(params) {var heartArr = document.querySelectorAll(".fa-heart-broken"); if (heartArr.length > 100) {heartArr[0].remove()}},100);
+  
+  function loadfoto(){
+    gambar1 = "https://feeldreams.github.io/pandawait.gif";
+    gambar2 = "https://feeldreams.github.io/bantal.gif";
+    gambar3 = "https://feeldreams.github.io/wortel.gif";
+    gambar4 = "https://feeldreams.github.io/ngumpet.gif";
+    gambar5 = "https://feeldreams.github.io/ywdh.gif";
+
+    fotosatu.src = gambar1;
+    fotodua.src = gambar2;
+    fototiga.src = gambar3;
+    fotoempat.src = gambar4;
+    fotolima.src = gambar5;
+  }
+
+  function pergantian(){
+      setTimeout(gantikata,3900);
+      setTimeout(gantikata,5600);
+      setTimeout(gantikata,8300);
+      setTimeout(gantikata,11400);
+      setTimeout(gantikata,12900);
+      setTimeout(gantikata,15700);
+      setTimeout(gantikata,17800);
+  }
+</script> <!-- Sampai Sini -->
+<script src="https://feeldreams.github.io/akuterlalu/script.js"></script>
+<script type="text/javascript">
+      async function pertama(){
+         kata1 = "Maafin aku ya 🙂";
+         kata2 = "belum bisa menjadi<br>yang terbaik 🙃";
+         kata3 = "Mungkin aku terlalu<br>sering bikin kesel";
+         kata4 = "Terlalu sering marah<br>pas nasehatinmu";
+         kata5 = "Dan terlalu banyak ngomong,";
+         kata6 = "....";
+         kata7 = "dimaafinkan?";
+         emot = "👉🏻👈🏻";
+
+         fotosatu.style="display:inline-flex";audio.play();showDiv()
+       } 
+</script>
+</body>
+</html>
